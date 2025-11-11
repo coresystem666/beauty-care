@@ -1,0 +1,109 @@
+.benefits {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--color-bg-light);
+}
+
+.benefits__title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text);
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.benefits__card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: 20px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.benefits__card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-secondary);
+}
+
+.benefits__card:hover::before {
+  transform: scaleX(1);
+}
+
+.benefits__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-light);
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.benefits__icon-svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent);
+  transition: var(--transition);
+}
+
+.benefits__card:hover .benefits__icon {
+  background-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+.benefits__card:hover .benefits__icon-svg {
+  color: var(--color-white);
+}
+
+.benefits__card-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.benefits__card-description {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .benefits__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .benefits__card {
+    padding: var(--spacing-md);
+  }
+}
+

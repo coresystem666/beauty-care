@@ -1,0 +1,57 @@
+/* 
+  АЛЬТЕРНАТИВНЫЕ ЦВЕТОВЫЕ ПАЛИТРЫ
+  Чтобы применить палитру, скопируйте переменные в :root в src/index.css
+*/
+
+/* ============================================
+   ПАЛИТРА 1: Мягкие бежевые тона (текущая)
+   ============================================ */
+:root[data-palette="1"] {
+  --color-primary: #E8D5C4;
+  --color-secondary: #F5E6D3;
+  --color-accent: #D4A574;
+  --color-text: #2C2C2C;
+  --color-text-light: #6B6B6B;
+  --color-white: #FFFFFF;
+  --color-bg-light: #FAF9F7;
+}
+
+/* ============================================
+   ПАЛИТРА 2: Розово-персиковые тона
+   ============================================ */
+:root[data-palette="2"] {
+  --color-primary: #F5D7DA;
+  --color-secondary: #FFE5E5;
+  --color-accent: #FF9AA2;
+  --color-text: #2C2C2C;
+  --color-text-light: #6B6B6B;
+  --color-white: #FFFFFF;
+  --color-bg-light: #FFF5F5;
+}
+
+/* ============================================
+   ПАЛИТРА 3: Лавандово-сиреневые тона
+   ============================================ */
+:root[data-palette="3"] {
+  --color-primary: #E6E1F5;
+  --color-secondary: #F0EDF8;
+  --color-accent: #B8A9D9;
+  --color-text: #2C2C2C;
+  --color-text-light: #6B6B6B;
+  --color-white: #FFFFFF;
+  --color-bg-light: #FAF9FF;
+}
+
+/* ============================================
+   ПАЛИТРА 4: Мятно-зеленые тона
+   ============================================ */
+:root[data-palette="4"] {
+  --color-primary: #D4E8E0;
+  --color-secondary: #E8F5F0;
+  --color-accent: #7FB3A3;
+  --color-text: #2C2C2C;
+  --color-text-light: #6B6B6B;
+  --color-white: #FFFFFF;
+  --color-bg-light: #F5FAF8;
+}
+
